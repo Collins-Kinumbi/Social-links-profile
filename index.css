@@ -38,10 +38,11 @@ p {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 50rem;
+  width: 100%;
   background-color: var(--DarkGrey);
-  margin-top: 2rem;
-  padding: 3.6rem 3rem;
+  margin-top: 4rem;
+  padding: 3.4rem 3rem;
   border-radius: 1rem;
 }
 
@@ -55,7 +56,7 @@ p {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .name {
@@ -72,7 +73,6 @@ p {
 .links {
   list-style: none;
   text-align: center;
-  /* width: 100%; */
 }
 
 .links li:not(:last-child) {
@@ -105,4 +105,38 @@ p {
   text-decoration: none;
   color: var(--Green);
   font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+/* 768px /16px = 48em */
+@media (max-width: 48em) {
+  p {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    max-width: 34rem;
+  }
+
+  .box {
+    padding: 0 2rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .location {
+    margin-bottom: 2.4rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    padding: 1.6rem 3.6rem;
+  }
+
+  .attribution {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
